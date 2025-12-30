@@ -32,8 +32,8 @@ class TuyaCloudApi:
     def __init__(self, hass, region_code, client_id, secret, user_id):
         """Initialize the class."""
         self._hass = hass
-        self._base_url = f"https://openapi.tuya{region_code}.com"
-        self._client_id = client_id
+        self._base_url = f"https://openapi-sg.iotbing.com"
+        self._client_id = region_code
         self._secret = secret
         self._user_id = user_id
         self._access_token = ""
