@@ -164,7 +164,7 @@ NO_PROTOCOL_HEADER_CMDS = [
 HEARTBEAT_INTERVAL = 10
 
 # DPS that are known to be safe to use with update_dps (0x12) command
-UPDATE_DPS_WHITELIST = [18, 19, 20]  # Socket (Wi-Fi)
+UPDATE_DPS_WHITELIST = [118, 18, 19, 20]  # Socket (Wi-Fi)
 
 # Tuya Device Dictionary - Command and Payload Overrides
 # This is intended to match requests.json payload at
@@ -197,7 +197,7 @@ payload_dict = {
         },
         CONTROL_NEW: {"command": {"devId": "", "uid": "", "t": ""}},
         DP_QUERY_NEW: {"command": {"devId": "", "uid": "", "t": ""}},
-        UPDATEDPS: {"command": {"dpId": [18, 19, 20]}},
+        UPDATEDPS: {"command": {"dpId": [118, 18, 19, 20]}},
     },
     # Special Case Device "0d" - Some of these devices
     # Require the 0d command as the DP_QUERY status request and the list of
